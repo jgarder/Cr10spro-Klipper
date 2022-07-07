@@ -36,10 +36,6 @@ cd ~
 git clone https://github.com/th33xitus/kiauh.git
 ./kiauh/kiauh.sh
 
-i ended up using spi 5 and needed these commands on my Rpi to active spi5
-dtoverlay=spi5-1cs
-dtparameter=cs0_pin=12
-
 PID_CALIBRATE HEATER=extruder TARGET=170
 PID_CALIBRATE HEATER=heater_bed TARGET=60
 
@@ -51,10 +47,5 @@ SHAPER_CALIBRATE
 TUNING_TOWER COMMAND=SET_RETRACTION PARAMETER=RETRACT_LENGTH START=0 FACTOR=0.05 #this test will test retract length from 0 to 5 on a 20mm tower
 
 ##sources
-1. [copied a lot from this](https://www.reddit.com/r/coreception/comments/peyx17/fluidd_config_for_klipper_guide_and_also_just/)
-
-2. [beanisfat leaves a comment i use](https://www.reddit.com/r/coreception/comments/nhtl3p/klipper_tmc2208_config_for_stock_printer/)
-
-3. [more config discussion inclusing making 2208 uart and coreception](https://www.reddit.com/r/coreception/comments/k619b1/klipper_on_elfcoreception/)
 
 4. [GREAT klipper print tuning guide i found after doing all this](https://github.com/AndrewEllis93/Print-Tuning-Guide#extrusion-multiplier)
