@@ -8,6 +8,7 @@ Creality Cr10S-Pro (V1) with Klipper. This will hold general installation and co
 4. install KiAUH
 4. compile klipper for your mcu which should be a mega ramps board stock.
 5. find serial port with terminal command : ls /dev/serial/by-id/*
+[if your using ubuntu and cannot find your MCU path](https://unix.stackexchange.com/a/674936)
 5. run "make menuconfig", setup for the mcu Mega at2560 .
 7. "make flash" works and uploads using the serial port.
 
@@ -49,3 +50,4 @@ TUNING_TOWER COMMAND=SET_RETRACTION PARAMETER=RETRACT_LENGTH START=0 FACTOR=0.05
 ##sources
 
 4. [GREAT klipper print tuning guide i found after doing all this](https://github.com/AndrewEllis93/Print-Tuning-Guide#extrusion-multiplier)
+[if your using ubuntu and cannot find your MCU path](https://unix.stackexchange.com/a/674936)
