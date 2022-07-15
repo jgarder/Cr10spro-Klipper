@@ -12,7 +12,7 @@ Creality Cr10S-Pro (V1) with Klipper. This will hold general installation and co
 5. run "make menuconfig", setup for the mcu Mega at2560 .
 7. "make flash" works and uploads using the serial port.
 
-8. copy over printer.cfg which contains all pinouts to control printer as well as macros for calibration and setup
+8. copy over klipper_config files. Printer.Cfg you should Take special care of. Your new Printer.cfg will need to have all includes which contains all pinouts to control printer as well as macros for calibration and setup
 9. [verify all printer components and tune extruder/Bed PID](https://github.com/Klipper3d/klipper/blob/master/docs/Config_checks.md) 
 10. [Setup Extruder Steps (if Not Stock)](https://www.klipper3d.org/Rotation_Distance.html)
 11. [Setup ZOffset/probe calibrate](https://github.com/Klipper3d/klipper/blob/master/docs/Probe_Calibrate.md)
