@@ -7,7 +7,8 @@ Creality Cr10S-Pro (V1) with Klipper. This will hold general installation and co
 3. install debian
 4. install KiAUH
 4. compile klipper for your mcu which should be a mega ramps board stock.
-5. find serial port with terminal command : ls /dev/serial/by-id/*
+5. find serial port with terminal command : ls /dev/serial/by-id/* ..[if your using ubuntu and cannot find your MCU path](https://unix.stackexchange.com/a/674936)
+
 5. run "make menuconfig", setup for the mcu Mega at2560 .
 7. "make flash" works and uploads using the serial port.
 
